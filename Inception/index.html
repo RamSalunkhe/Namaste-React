@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
@@ -27,26 +28,6 @@
     <!-- we have injected library which gives access to DOM (web version of React)
     suppose if i want to write some react code which goes into the browser, it happen over here -->
 
-   <script>                          
-    const heading = React.createElement("h1", {
-        id:"title" // it stores tag attributes like id="title", style=""   we call it as PROPS
-    }, "Namaste Everyone from React!");  // creates h1 tag => NOW we need to put this heading into root 
-
-    
-    //creating root 
-    // we have to tell react that, this is the root element this is the place i want my react to run
-    // createRoot() tells react that, what is the root element inside my app
-
-    console.log(heading); // React element is an object 
-
-    const root = ReactDOM.createRoot(document.getElementById("root")); // root is the place where react runs other HTML code won't affect
-
-    // passing a react element inside the root element
-    // render() takes react element and modifies our DOM (injects into the DOM note: see => inspect => elemets)
-    // render() will override everything eg. line no. 12 will override with line no. 34
-
-    root.render(heading); 
-
-   </script>
+   <script src="App.js"></script>
 </body>
 </html>
